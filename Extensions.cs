@@ -2,8 +2,11 @@ namespace BogusExtensionDiagnostic;
 
 internal static class Extensions
 {
-    public static string Hello(this string s)
+    extension(string s)
     {
-        return $"Hello, {s}!";
+        public string Hello()
+        {
+            return $"Hello, {s}!";
+        }
     }
 }
